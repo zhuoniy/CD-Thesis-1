@@ -44,14 +44,36 @@
       
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
-	<h1>Interactive Data Science Project Exploratory Analysis Byte Example</h1>
-        <p>This is the Exploratory Analysis Byte of the Interactive Data Science class.</p>
+	<h1>Interactive Data Science Project Exploratory Analysis Byte4 by Zhuoni</h1>
+        <p>This is the Exploratory Analysis Byte4 of the Interactive Data Science class.</p>
+        <p>Question: What are locations I offen visit? Where do I like to use/play my mobile phone?</p>
+        <p>In this project, I recorded my mobile location and mobile screen and battery level within 10 days. 
+        Mobile location is recorded as latitude and longitude.
+        Mobile screen usage is saved as true(lighting) or false(sleep).
+        And battery level is scaled to 100% percentage.
+        Based on screen usage and slope of battery level, I can see my mobile phone using frequency.
+        In the visualization, it's easy to see my tracks in these days, and to see my mobile phone usage based on the timeline.
+        In addition, all the visualization sections are interactive, so you can use any part as a filter. 
+        So, you can filter the data in one day or several days, or in a large or small region.</p>
+        <p>Some designed implementation process: when connecting location, battery, screen tables, I should set the connection filter as 
+        "tableA.time=tableB.time". But in fact, data in those tables are not collected at the same time, so in Tableau there is no "tableA.time=tableB.time".
+        My method is to segment time for every 15 minutes, time in a same period will be equal. For example, "2018/10/08 08:01" is "equal" to "2018/10/18 08:08".
+        In this way, tables can be connected.
+       
+        </p>
+        <p>I put battery level together with screen usage, so they result in a good comparison. I use two sections to visualize them in hours and seconds, 
+        by using two different visualizing forms.
+        </p>        
+        <p>As an outcome, I can find it's interesting that I offen use phones in the way from home to campus or the way go back home.
+        </p>
       </div>
       
       <div class="page-header">
 	
       </div> <!-- /page-header -->
-    </div> <!-- /container -->
+<div class='tableauPlaceholder' id='viz1540971879100' style='position: relative'><noscript><a href=''><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;by&#47;byte4b-2&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='byte4b-2&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;by&#47;byte4b-2&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1540971879100');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.minWidth='420px';vizElement.style.maxWidth='1150px';vizElement.style.width='100%';vizElement.style.minHeight='487px';vizElement.style.maxHeight='707px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+</div> <!-- /container -->
 
 <svg></svg>
 
@@ -102,7 +124,8 @@ div.tooltip {
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script> 
     <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script>
+   <!-- <script>
+    
     $( document ).ready(function() {
 	
 		/* Start date/time hover graph code
@@ -251,7 +274,8 @@ div.tooltip {
 		}); */ 
 		//End bar chart code
 		
-	}); //End document ready			   
-</script>
+	}); //End document ready
+	
+</script> -->
 </body>
 </html>

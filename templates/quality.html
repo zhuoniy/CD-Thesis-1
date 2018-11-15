@@ -46,27 +46,30 @@
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
 	<h1>Quality: About This Data Set</h1>
-        <p>Write a brief summary about the quality of the data set here</a></p>
+        <p>Generally, the data is over-medium quality, with some data missing, but correct and coherent.</p>
       </div>
 
     
       <div class="page-header">
 	<h2>Is the data complete?</h2>
-	<p>If not, what is missing and what concerns does it raise?
-	What is your evidence for this?</p>
+	<p>The data should be complete, because I use the mature tool - AWARE to get data of my phone usage. But as you can see, there are not records
+	on 2018/10/12. All data of this day is missing. One possiblity is that I powered off my phone on the whole day, 
+	but it looks little possible and I can't confirm it.</p>
       </div>
       
       <div class="page-header">
 	<h2>Is the data coherent?</h2>
-	<p>Does it make sense relative to itself? Does it match your
-	expectations? Are the distributions sensible? What is your
-	evidence for this?</p>
+	<p>It's coherent. 
+		Location is recorded as latitude and longitude, in double float.
+        Screen usage is saved as "2=locked", "3=unlocked", in integers.
+        And battery level is scaled to 100% percentage, in integers.</p>
       </div>
 
       <div class="page-header">
 	<h2>Is the data correct?</h2>
-	<p>What aspects of this data can you verify? How did you do so? What did
-	you find?</p>
+	<p>Yes, they are correct. Because all the location records are locations I visited in these days. 
+	And I also checked the realtime data of screen usage and battery level, in the collecting period.
+	</p>
       </div>
 
     </div> <!-- /container -->
